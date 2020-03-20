@@ -91,7 +91,14 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
 
 PROMPT=''
 PROMPT="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%})"
 PROMPT+='${USERNAME} %{$reset_color%}: %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+### End of Zinit's installer chunk
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
