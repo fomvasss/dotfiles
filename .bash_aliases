@@ -41,3 +41,6 @@ alias vssh='vagrant ssh'
 
 #APIDOC
 alias apdr='apidoc -i app/Http/Controllers/Api -o public/docs'
+
+#GULP
+alias gbt='./node_modules/.bin/gulp build; ./node_modules/.bin/gulp test --noinline --nohtmlmin'

@@ -102,3 +102,7 @@ PROMPT+='${USERNAME} %{$reset_color%}: %{$fg[cyan]%}%c%{$reset_color%} $(git_pro
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# fnm
+export PATH=/home/fomvasss/.fnm:$PATH
+eval "`fnm env --multi`"
