@@ -20,6 +20,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# LINUX
+alias swof='sudo swapoff -a; sudo swapon -a'
+
 # GIT
 alias gst='git status'
 alias gct='git commit'
