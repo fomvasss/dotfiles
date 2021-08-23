@@ -43,6 +43,7 @@ alias vs='vagrant suspend'
 alias vssh='vagrant ssh'
 
 #APIDOC
+alias apdrh='apidoc -i app/Http -o public/docs'
 alias apdr='apidoc -i app/Http/Controllers/Api -o public/docs'
 alias apdrcc='apidoc -i app/Http/Controllers/Api -o public/docs/client;apidoc -i control/src/Http/Controllers/Api -o public/docs/control'
 
