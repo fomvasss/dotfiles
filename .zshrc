@@ -103,6 +103,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -d ~/.fnm ]; then
 # fnm
 export PATH=/home/fomvasss/.fnm:$PATH
-eval "`fnm env --multi`"
+eval "`fnm env`"
+fi
+
+

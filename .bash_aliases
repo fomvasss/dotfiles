@@ -22,6 +22,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# LINUX
+alias swof='sudo swapoff -a; sudo swapon -a'
+
 # GIT
 alias gst='git status'
 alias gct='git commit'
@@ -42,6 +45,7 @@ alias vs='vagrant suspend'
 alias vssh='vagrant ssh'
 
 #APIDOC
+alias apdrh='apidoc -i app/Http -o public/docs'
 alias apdr='apidoc -i app/Http/Controllers/Api -o public/docs'
 alias apdrh='apidoc -i app/Http -o public/docs'
 alias apdra='apidoc -i app -o public/docs'
