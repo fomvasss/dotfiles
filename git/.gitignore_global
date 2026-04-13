@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Secrets
+.env
+.env.local
+.env.*.local

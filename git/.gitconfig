@@ -1,0 +1,6 @@
+[user]
+	email = fomvasss@gmail.com
+	name = Vas
+[core]
+	compression = 9
+	excludesfile = ~/.gitignore_global
