@@ -37,12 +37,16 @@ backup_and_link "$DOTFILES_DIR/zsh/.zshrc" ~/.zshrc
 
 # Symlinks для copilot
 if [[ "$OS" == "Darwin" ]]; then
-    COPILOT_DIR="$HOME/Library/Application Support/Code/User/prompts"
+    COPILOT_VSCODE_DIR="$HOME/Library/Application Support/Code/User/prompts"
 elif [[ "$OS" == "Linux" ]]; then
-    COPILOT_DIR="$HOME/.config/Code/User/prompts"
+    COPILOT_VSCODE_DIR="$HOME/.config/Code/User/prompts"
 fi
-mkdir -p "$COPILOT_DIR"
-backup_and_link "$DOTFILES_DIR/copilot/copilot-instructions.md" "$COPILOT_DIR/copilot-instructions.md"
+mkdir -p "$COPILOT_VSCODE_DIR"
+backup_and_link "$DOTFILES_DIR/copilot/copilot-instructions.md" "$COPILOT_VSCODE_DIR/copilot-instructions.md"
+
+COPILOT_INTELLIJ_DIR="$HOME/.config/github-copilot/intellij"
+mkdir -p "$COPILOT_INTELLIJ_DIR"
+backup_and_link "$DOTFILES_DIR/copilot/copilot-instructions.md" "$COPILOT_INTELLIJ_DIR/global-copilot-instructions.md"
 
 # Специфічні пакети
 if [[ "$OS" == "Darwin" ]]; then
