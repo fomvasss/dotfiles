@@ -4,3 +4,4 @@
 [core]
 	compression = 9
 	excludesfile = ~/.gitignore_global
+	editor = nano

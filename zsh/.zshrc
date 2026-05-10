@@ -110,3 +110,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     [[ -f ~/.zshrc.linux ]] && source ~/.zshrc.linux
 fi
+
+export OLLAMA_HOST=0.0.0.0
